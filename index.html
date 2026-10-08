@@ -97,6 +97,73 @@
             padding: 14px 16px 0;
         }
 
+        .tg-btn {
+            display: block;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #2787F5, #1a6bc9);
+            padding: 12px 16px;
+            border-radius: 60px;
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+            transition: 0.2s;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(39, 135, 245, 0.3);
+        }
+
+        .tg-btn:active {
+            transform: scale(0.97);
+        }
+
+        .fallback {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            padding: 8px 12px;
+            border: 1px solid rgba(164, 119, 232, 0.1);
+            margin-bottom: 12px;
+        }
+
+        .fallback p {
+            font-size: 10px;
+            color: #8a7aaa;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .copy-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #0c0a14;
+            border-radius: 60px;
+            padding: 3px 3px 3px 12px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .copy-row span {
+            color: #d4bfff;
+            font-weight: 500;
+            font-size: 11px;
+        }
+
+        .copy-btn {
+            background: #6b4c9e;
+            border: none;
+            color: white;
+            font-weight: 600;
+            padding: 5px 14px;
+            border-radius: 60px;
+            cursor: pointer;
+            font-size: 10px;
+            transition: 0.15s;
+        }
+
+        .copy-btn:active {
+            transform: scale(0.95);
+            background: #5a3f86;
+        }
+
         .catchphrase {
             text-align: center;
             font-size: 15px;
@@ -113,7 +180,6 @@
             color: transparent;
         }
 
-        /* Универсальный блок */
         .project-block {
             background: linear-gradient(145deg, #2a1748 0%, #1c1130 100%);
             border-radius: 20px;
@@ -251,74 +317,6 @@
             opacity: 0.9;
         }
 
-        /* Telegram */
-        .tg-btn {
-            display: block;
-            margin-bottom: 10px;
-            background: linear-gradient(90deg, #2787F5, #1a6bc9);
-            padding: 12px 16px;
-            border-radius: 60px;
-            text-decoration: none;
-            color: white;
-            font-weight: 700;
-            font-size: 14px;
-            transition: 0.2s;
-            text-align: center;
-            box-shadow: 0 4px 16px rgba(39, 135, 245, 0.3);
-        }
-
-        .tg-btn:active {
-            transform: scale(0.97);
-        }
-
-        .fallback {
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 16px;
-            padding: 8px 12px;
-            border: 1px solid rgba(164, 119, 232, 0.1);
-            margin-bottom: 10px;
-        }
-
-        .fallback p {
-            font-size: 10px;
-            color: #8a7aaa;
-            text-align: center;
-            margin-bottom: 5px;
-        }
-
-        .copy-row {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #0c0a14;
-            border-radius: 60px;
-            padding: 3px 3px 3px 12px;
-            border: 1px solid rgba(255, 255, 255, 0.06);
-        }
-
-        .copy-row span {
-            color: #d4bfff;
-            font-weight: 500;
-            font-size: 11px;
-        }
-
-        .copy-btn {
-            background: #6b4c9e;
-            border: none;
-            color: white;
-            font-weight: 600;
-            padding: 5px 14px;
-            border-radius: 60px;
-            cursor: pointer;
-            font-size: 10px;
-            transition: 0.15s;
-        }
-
-        .copy-btn:active {
-            transform: scale(0.95);
-            background: #5a3f86;
-        }
-
         .footer {
             text-align: center;
             padding: 10px 20px 0;
@@ -357,6 +355,19 @@
     </div>
 
     <div class="main-content">
+        <!-- TELEGRAM — САМЫЙ ПЕРВЫЙ -->
+        <a href="https://t.me/officialgeovaxue" class="tg-btn" target="_blank" rel="noreferrer noopener">
+            📢 ПЕРЕЙТИ В TELEGRAM
+        </a>
+
+        <div class="fallback">
+            <p>⚠️ Если Telegram не открывается — найди вручную:</p>
+            <div class="copy-row">
+                <span>@officialgeovaxue</span>
+                <button class="copy-btn" onclick="copyChannel()">📋 КОПИРОВАТЬ</button>
+            </div>
+        </div>
+
         <div class="catchphrase">
             ЗАБЕРИ СВОЙ <span>ЖИРНЫЙ БОНУС</span>
         </div>
@@ -443,19 +454,6 @@
             <a href="https://eternal-ascend.com/serumkl7o" class="project-btn" target="_blank" rel="noreferrer noopener">
                 🎁 ЗАБРАТЬ БОНУС
             </a>
-        </div>
-
-        <!-- Telegram -->
-        <a href="https://t.me/officialgeovaxue" class="tg-btn" target="_blank" rel="noreferrer noopener">
-            📢 ПЕРЕЙТИ В TELEGRAM
-        </a>
-
-        <div class="fallback">
-            <p>⚠️ Если Telegram не открывается — найди вручную:</p>
-            <div class="copy-row">
-                <span>@officialgeovaxue</span>
-                <button class="copy-btn" onclick="copyChannel()">📋 КОПИРОВАТЬ</button>
-            </div>
         </div>
     </div>
 
