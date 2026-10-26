@@ -122,6 +122,35 @@
             z-index: 1;
         }
 
+        /* Telegram кнопка */
+        .tg-btn {
+            display: block;
+            margin-bottom: 14px;
+            background: linear-gradient(90deg, #2787F5, #1a6bc9);
+            padding: 15px 16px;
+            border-radius: 60px;
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            font-size: 15px;
+            transition: 0.2s;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(39, 135, 245, 0.4);
+        }
+
+        .tg-btn span {
+            display: block;
+            font-size: 11px;
+            font-weight: 400;
+            opacity: 0.85;
+            margin-top: 3px;
+        }
+
+        .tg-btn:active {
+            transform: scale(0.97);
+            opacity: 0.9;
+        }
+
         .catchphrase {
             text-align: center;
             font-size: 15px;
@@ -322,6 +351,12 @@
     </div>
 
     <div class="main-content">
+        <!-- TELEGRAM -->
+        <a href="https://t.me/officialgeovaxue" class="tg-btn" target="_blank" rel="noreferrer noopener">
+            📢 ПЕРЕЙТИ В TELEGRAM
+            <span>бонусы • фриспины • заносы</span>
+        </a>
+
         <div class="catchphrase">
             ЗАБЕРИ СВОЙ <span>ЖИРНЫЙ БОНУС</span> 💰
         </div>
